@@ -1,6 +1,10 @@
 include_attribute "jetty"
 
-expand!
+if Chef::Config[:solo]
+    @node.expand!('disk')
+else
+    @node.expand!('server')
+end
 
 default[:solr][:version]   = "3.6.1"
 default[:solr][:link]      = "http://www.mirrorservice.org/sites/ftp.apache.org/lucene/solr/#{solr.version}/apache-solr-#{solr.version}.tgz"
