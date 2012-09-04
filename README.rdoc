@@ -4,7 +4,7 @@ This chef cookbook is designed to install Solr as a Jetty servlet and should be 
 
 = REQUIREMENTS:
 
-= ATTRIBUTES: 
+= ATTRIBUTES:
 
 = USAGE:
 

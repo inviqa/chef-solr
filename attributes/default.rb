@@ -1,9 +1,9 @@
 include_attribute "jetty"
 
 if Chef::Config[:solo]
-    @node.expand!('disk')
+    node.expand!('disk')
 else
-    @node.expand!('server')
+    node.expand!('server')
 end
 
 default[:solr][:version]   = "3.6.1"
