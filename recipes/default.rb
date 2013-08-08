@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe "jetty"
+include_recipe "chef-jetty"
 
 remote_file node['solr']['download'] do
   source   node['solr']['link']

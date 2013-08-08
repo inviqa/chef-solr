@@ -1,4 +1,4 @@
-include_attribute "jetty"
+include_attribute "chef-jetty"
 
 if Chef::Config[:solo]
     node.expand!('disk')
